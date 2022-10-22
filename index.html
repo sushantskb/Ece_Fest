@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Fiesta</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 11th code here, making the navbar -->
+    <nav class="navbar">
+        <h1 class="logo">E-FIESTA 2K22</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">HOME</a></li> <!-- 16th code goes, here adding the class name to the HOME -->
+            <li><a href="#technical">TECHNICAL</a></li>
+            <li><a href="#non-technical">NON-TECHNICAL</a></li>
+            <li><a href="#cultural">CULTURAL</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <!-- 19th code goes here, adding the menu button for mobile view -->
+        <img src="menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <!-- 1st code goes here making the header -->
+   <header>
+    <div class="header-content">
+        <h2>
+            <marquee>जीना ECE का नाम है!</marquee> 
+        </h2>
+        <div class="line"></div>
+        <h1>E-Fiesta 2K22</h1>
+        <!-- 3rd cod egoes here, creating the button -->
+        <a href="#" class="ctn">About</a>
+    </div>
+</header>
+
+
+
+    <!-- 35th code goes here, adding the explore section in the website -->
+
+    <section class="explore" id="technical">
+        <div class="explore-content">
+            <h1>Technical Events</h1>
+            <div class="line"></div>
+            <p>
+                New experiences bring us new knowledge. These event, offer the opportunity to discover or develop an
+                inner skill from which you can make a difference through technical events and to show case your
+                technical skills
+            </p>
+            <a href="event.html" class="ctn">Register</a>
+        </div>
+    </section>
+
+
+    <!-- non-technical -->
+    <section class="explore2" id="non-technical">
+        <div class="explore-content2">
+            <h1>Non-Technical Events</h1>
+            <div class="line"></div>
+            <p>
+                New experiences bring us new knowledge. These event, offer the opportunity to discover or develop an
+                inner skill from which you can make a difference through technical events and to show case your
+                technical skills
+            </p>
+            <a href="non.html" class="ctn">Register</a>
+        </div>
+    </section>
+
+    <!-- cultural -->
+    <section class="explore3" id="cultural">
+        <div class="explore-content3">
+            <h1>Cultural Events</h1>
+            <div class="line"></div>
+            <p>
+                New experiences bring us new knowledge. These event, offer the opportunity to discover or develop an
+                inner skill from which you can make a difference through technical events and to show case your
+                technical skills
+            </p>
+            <a href="cultural.html" class="ctn">Register</a>
+        </div>
+    </section>
+
+
+
+
+    <!-- 40th code goes here, i.e, adding the footer -->
+    <section class="footer">
+        <p>123 Fifth Avenue, NY 1060, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright &copy; 2022 Outdoor Adventure</p>
+    </section>
+
+    <!-- 23rd code goes here, adding the javascript to make the menu-button work -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>

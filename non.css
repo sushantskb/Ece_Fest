@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h4{
+    font-family: monospace;
+    color: rgb(255, 128, 0);
+    font-weight: bolder;
+    font-size: 2rem;
+    border-top: 3px;
+    padding: 5px;
+    border-bottom: 3px solid ;
+}
+p{
+    /* background-image: linear-gradient(black,blue); */
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}

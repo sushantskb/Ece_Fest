@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2nd code here styling the header */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg2.png');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    /* 5th code goes here, adding more style to the header */
+    display: flex;
+    align-items: flex-end;
+    /* Note: If we make it center then the text will be located in center */
+    justify-content: center;
+}
+
+/* 4th code goes here, removing the line in the anchor tag */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 6th code goes here, targeting the header-content and styling it */
+.header-content {
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+
+/* 7th code goes here, targeting the h2 tag and giving it the desired size */
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+/* 8th code goes here, styling the line div */
+.line {
+    width: 150px;
+    height: 4px;
+    background: #2b83ee;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* 9th code here, targeting the h1 tag and styling it */
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* 10th code goes here, styling the button */
+.ctn {
+    background: #2b83ee;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* 12th code goes here, adjusting the navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    background-image: url("bg2.png");
+    
+}
+
+/* 13th code goes here, removing the dots */
+ul {
+    list-style: none;
+}
+
+/* 14th code goes here, styling the navabar */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* 15th code goes here, adding the margins to the text in the navbar */
+.nav-links li {
+    margin: 0 30px;
+}
+
+/* 17th code goes here, styling the HOME  */
+.active {
+    color: #0051ff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* 20th code here, styling the button for mobile-view , here we have to specificaly place here so that the menu button will be displayed while we are in the mobile-view otherwise the menu button is not showing in mobile-view*/
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    /* 26th code goes here, making the menu button diappear */
+}
+
+/* 18th code goes here, making the navbar responsibe */
+@media only screen and (max-width:850px) {
+
+    /* 27th code goes here, */
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(93, 93, 156);
+        margin-top: -900px;
+        /* 21st code here, making the nav-bar disappear*/
+        transition: all 0.5s ease;
+        /* 24th code goes here, adding transition to the nav-bar */
+    }
+
+    /* 22nd code goes here, adding the mobile-view class */
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 20%;
+        /* 25th code goes here, making the right corner stylish */
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    /* 42nd code goes here, making the events section responsiveness */
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+    /* 43rd code goes here, making the explore section responsiveness */
+    .explore-content {
+        width: 100%;
+    }
+
+    /* 44th code goes here, i.e making the tours section responsiveness */
+    .tours .col {
+        width: 100%;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 90%;
+    }
+
+    /* 45th code goes here, trageting the footer */
+    .footer {
+        padding: 10px;
+    }
+
+    /* 46th code goes here, adjusting the button */
+    .content-col .ctn {
+        margin: 0 -80px;
+    }
+    .explore-content p{
+    padding: 0px 0px;
+    width: 337px;
+    margin: -20px;
+    margin-left: 113px;
+    }
+    .explore-content2 p{
+        padding: 0 0;
+        width: 337px;
+        margin: -20px;
+        margin-left: 113px;
+    }
+    .explore-content3 p{
+        padding: 0 0;
+        width: 337px;
+        margin: -20px;
+        margin-left: 113px;
+    }
+}
+
+/* 29th code goes here, i.e styling the section tag*/
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+/* 30th code goes here, styling the tittle */
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #6e628a;
+}
+
+/* 32nd code goes here, adjusting the images and text */
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* 33rd code goes here, styling the events divison */
+.events .rows {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 3vmin;
+    color: rgb(45, 45, 74);
+    margin: 20px auto;
+}
+
+p {
+    color: #6e628a;
+    padding: 0px 40px;
+}
+
+.events .ctn {
+    margin-top: 30px;
+}
+
+/* 34th code goes here, i.e to cut the side bar in the website */
+body, html {
+    overflow-x: hidden;
+}
+
+/* 36th code goes here, styling the explore */
+.explore {
+    width: 100%;
+    height: 100vh;
+    background: url('./DEPARTMENT/1.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+/* 37th code goes here, styling the contents of the explore section */
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: rgb(11, 10, 10);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+}
+
+.explore-content .line {
+    margin-bottom: 50px;
+}
+
+.explore-content p {
+    color: rgb(31, 28, 28);
+    font-size: 4.6vmin;
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+    width: 126px;
+    padding: 17px 31px;
+    height: 58px;
+}
+
+
+/* 2nd explore-content */
+.explore2 {
+    width: 100%;
+    height: 100vh;
+    background: url('./DEPARTMENT/3.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content2 {
+    width: 60%;
+    padding: 50px;
+    color: rgb(11, 10, 10);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content2 h1 {
+    font-size: 7vmin;
+}
+
+.explore-content2 .line {
+    margin-bottom: 50px;
+}
+
+.explore-content2 p {
+    color: rgb(31, 28, 28);
+    font-size: 4.6vmin;
+}
+
+.explore-content2 .ctn {
+    margin-top: 40px;
+    width: 126px;
+    padding: 17px 31px;
+    height: 58px;
+}
+
+/* 3rd explore-content */
+.explore3 {
+    width: 100%;
+    height: 100vh;
+    background: url('./DEPARTMENT/4.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content3 {
+    width: 60%;
+    padding: 50px;
+    color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content3 h1 {
+    font-size: 7vmin;
+}
+
+.explore-content3 .line {
+    margin-bottom: 50px;
+}
+
+.explore-content3 p {
+    color: rgb(255, 255, 255);
+    font-size: 4.6vmin;
+}
+
+.explore-content3 .ctn {
+    margin-top: 40px;
+    width: 126px;
+    padding: 17px 31px;
+    height: 58px;
+}
+
+
+/* 39th code goes here, styling the tour division */
+.content-col {
+    width: 40%;
+    margin: 0 10px;
+}
+
+.image-col {
+    width: 60%;
+}
+
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.content-col h1 {
+    font-size: 6vmin;
+    color: #6e628a;
+}
+
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+.content-col .ctn {
+    margin-left: -100px;
+}
+
+/* 41th code goes here, styling the footer */
+.footer {
+    width: 100%;
+    min-height: 100%;
+    padding: 20px 80px;
+    margin: 0;
+    text-align: center;
+    background: #0d0d21;
+}
+
+.footer p {
+    color: white;
+    margin: 20px auto;
+}
+
+/* 47th code goes here, adding animations */
+img {
+    transition: transform .3s ease;
+    border-radius: 3.5rem 0;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background: rgb(227, 220, 148);
+    color: #e81818;
+    box-shadow: 2px 2px;
+}
+
+li:hover {
+    color: #e81818;
+    cursor: pointer;
+}
